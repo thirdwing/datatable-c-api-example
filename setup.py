@@ -12,7 +12,8 @@ ext_modules = [
         sources=['src/example.cc'],
         include_dirs=[pybind11.get_include(),
                       'datatable/datatable/include'],
-        language='c++'
+        language='c++',
+        extra_compile_args=['-std=c++11']
     ),
 ]
 
